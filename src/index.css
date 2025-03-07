@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Afacad Flux', sans-serif;
+  /* /* font-family: "Dancing Script", cursive; */
+  /* font-family: "Lobster", cursive; */
+}
+
+.hero {
+  filter: drop-shadow(2px 2px 30px #ea4dea);
+}
+
+.herobg {
+  background-color: rgb(0, 9, 37);
+}
+
+.spinner {
+  animation: spin 5s infinite; /* Infinite spinning animation */
+}
+
+@keyframes spin {
+  0% {
+    translate: 0px 0px;
+  }
+  50% {
+    translate: 0px -27px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
+
+@keyframes shine {
+  0% {
+    /* border-top: 1px solid #ea4dea; */
+    box-shadow: 5px 5px 5px #ea4dea;
+  }
+  25% {
+    /* border-right: 1px solid #ea4dea; */
+    box-shadow: -5px -5px -5px #ea4dea;
+  }
+  50% {
+    /* border-bottom: 1px solid #ea4dea; */
+    box-shadow: 5px 5px 5px #ea4dea;
+  }
+  75% {
+    /* border-left: 1px solid #ea4dea; */
+    box-shadow: 5px 5px 5px #ea4dea;
+  }
+  100% {
+    /* border-top: 1px solid #ea4dea; */
+    box-shadow: 5px 5px 5px #ea4dea;
+  }
+}
