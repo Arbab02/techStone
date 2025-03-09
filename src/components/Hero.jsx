@@ -38,7 +38,7 @@ const Hero = () => {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="  py-[7rem] bg-white  body-font bg-gradient-to-tr from-[#000000] via-[#00071E] to-[#021246]"
+      className="  py-[7rem] bg-white  body-font bg-gradient-to-tr from-[#000000] via-[#00071E] to-blue-950"
     >
       <div className="container mx-auto flex  px-8 py-2 md:flex-row flex-col items-center">
         <motion.div
@@ -60,7 +60,7 @@ const Hero = () => {
             We are team of talented designers making websites with ReactJS &
             TailwindCSS
             <a href="/addTopic">
-              <button className="block mx-auto lg:mx-0  xl:mx-0 md:mx-0 rounded-full text-xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-500 font-normal mt-4 text-white px-6 py-2 shadow-lg hover:from-purple-600 hover:via-pink-600 hover:to-pink-600 transition duration-300">
+              <button className="block mx-auto lg:mx-0  xl:mx-0 md:mx-0 rounded-full text-xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-600 font-normal mt-4 text-white px-6 py-2 shadow-lg hover:from-purple-600 hover:via-pink-600 hover:to-pink-600 transition duration-300">
                 Join Our Courses
               </button>
             </a>
