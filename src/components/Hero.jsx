@@ -38,7 +38,7 @@ const Hero = () => {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="  py-[7rem] bg-white  body-font bg-gradient-to-tr from-[#000000] via-[#00071E] to-blue-950"
+      className="  pt-[7rem] bg-white  body-font bg-gradient-to-tr from-[#000000] via-[#00071E] to-blue-950"
     >
       <div className="container mx-auto flex  px-8 py-2 md:flex-row flex-col items-center">
         <motion.div
@@ -72,7 +72,7 @@ const Hero = () => {
         </motion.div>
         {/* pl-8 property was here below */}
         <motion.div
-          className="lg:max-w-2xl  lg:w-1/2 md:w-3/4 w-full"
+          className="lg:max-w-xl  lg:w-1/2 md:w-3/4 w-full"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
