@@ -34,11 +34,12 @@ const Hero = () => {
   };
 
   return (
+    // from-[#000000] via-[#00071E] to-blue-950
     <motion.section
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="  pt-[7rem] bg-white  body-font bg-gradient-to-tr from-[#000000] via-[#00071E] to-blue-950"
+      className="  pt-[7rem] bg-white  body-font bg-gradient-to-tl from-[#000000] via-[#000828] to-[#000000]"
     >
       <div className="container mx-auto flex  px-8 py-2 md:flex-row flex-col items-center">
         {/* mb-16 property was here below */}
@@ -61,7 +62,7 @@ const Hero = () => {
             We are team of talented designers making websites with ReactJS &
             TailwindCSS
             <a href="/addTopic">
-              <button className="block mx-auto lg:mx-0  xl:mx-0 md:mx-0 rounded-full xl:text-xl lg:text-lg text-lg  bg-gradient-to-r from-blue-950 via-blue-800 to-blue-600 font-normal mt-4 text-white px-6 py-2  transition-all hover:scale-110 ">
+              <button className="block mx-auto lg:mx-0  xl:mx-0 md:mx-0 rounded-full xl:text-xl lg:text-lg text-lg  bg-gradient-to-tl from-blue-950 via-blue-700 to-blue-900 font-normal mt-4 text-white px-6 py-2  transition-all hover:scale-110 ">
                 Join Our Courses
               </button>
             </a>
