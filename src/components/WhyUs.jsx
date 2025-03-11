@@ -2,8 +2,8 @@ import React from 'react';
 import WhyUsImg from '../assets/why-us.png';
 const WhyUs = () => {
   return (
-    <section className=" bg-white text-[#000925] body-font">
-      <div className="container mx-auto flex  px-5  md:flex-row flex-col items-center">
+    <section className=" bg-gradient-to-tl from-[#000000] via-[#000828] to-[#000000] text-[white] body-font">
+      <div className="container mx-auto flex  px-5 py-8  md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10 ">
           <img
             className="object-cover object-center rounded spinner"
@@ -19,7 +19,7 @@ const WhyUs = () => {
             <br className="hidden lg:inline-block" />
             readymade gluten
           </h1>
-          <p className="mb-4 text-left leading-[1.5rem] text-gray-700 text-[1.3rem] ">
+          <p className="mb-4 text-left leading-[1.5rem] text-gray-400 text-[1.3rem] ">
             Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
             plant cold-pressed tacos poke beard tote bag. Heirloom echo park
             mlkshk tote bag selvage hot chicken authentic tumeric truffaut
