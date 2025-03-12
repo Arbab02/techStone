@@ -26,7 +26,7 @@ const WhyUs = () => {
             hexagon try-hard chambray.
           </p>
           <div className="flex justify-center">
-            <button className="border-2 border-blue-400 text-blue-400 px-8 py-1 rounded font-bold text-lg">
+            <button className="block mx-auto lg:mx-0  xl:mx-0 md:mx-0 rounded-full xl:text-xl lg:text-lg text-base  bg-gradient-to-tl from-blue-600 via-[#000828] to-blue-600 font-normal mt-4 text-white px-10 py-2  transition-all hover:scale-110">
               Learn More
             </button>
           </div>
