@@ -2,7 +2,7 @@ import React from 'react';
 import WhyUsImg from '../assets/why-us.png';
 const WhyUs = () => {
   return (
-    <section className=" bg-gradient-to-tl from-[#000000] via-[#000828] to-[#000000] text-[white] body-font">
+    <section className=" bg-gradient-to-tl from-[#000000] via-[#020D36] to-[#000000] text-[white] body-font">
       <div className="container mx-auto flex  px-5 py-8  md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10 ">
           <img
