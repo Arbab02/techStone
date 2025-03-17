@@ -2,7 +2,7 @@ import React from 'react';
 import WhyUsImg from '../assets/why-us.png';
 const WhyUs = () => {
   return (
-    <section className=" bg-gradient-to-tl from-[#000000] via-[#020D36] to-[#000000] text-[white] body-font">
+    <section className=" text-[white] bg-gradient-to-tl from-[#000000] via-[#020D36] to-[#000000] body-font">
       <div className="container mx-auto flex  px-5 py-8  md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10 ">
           <img
@@ -26,7 +26,7 @@ const WhyUs = () => {
             hexagon try-hard chambray.
           </p>
           <div className="flex justify-center">
-            <button className="block mx-auto lg:mx-0  xl:mx-0 md:mx-0 rounded-full xl:text-xl lg:text-lg text-base  bg-gradient-to-tl from-blue-600 via-[#000828] to-blue-600 font-normal mt-4 text-white px-10 py-2  transition-all hover:scale-110">
+            <button className="block mx-auto lg:mx-0  xl:mx-0 md:mx-0 rounded-full xl:text-xl lg:text-lg  bg-tranparent font-normal mt-4 text-white px-10 py-2 text-blue-400 border-2 border-rounded border-blue-500  transition-all hover:scale-110 ">
               Learn More
             </button>
           </div>
