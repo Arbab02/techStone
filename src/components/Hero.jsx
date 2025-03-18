@@ -62,7 +62,7 @@ const Hero = () => {
             We are team of talented designers making websites with ReactJS &
             TailwindCSS
             <a href="/addTopic">
-             <button className="block mx-auto lg:mx-0  xl:mx-0 md:mx-0 rounded-full xl:text-xl lg:text-lg text-base bg-gradient-to-tl from-blue-700 via-[#071655] to-blue-800 font-normal mt-4 text-white px-6 py-2 xl:px-7 xl:py-3 lg:px-6 lg:py-2  transition-all hover:scale-110 ">
+             <button className="block mx-auto lg:mx-0  xl:mx-0 md:mx-0 rounded-full xl:text-xl lg:text-lg text-base bg-gradient-to-tl from-blue-600 via-[#071655] to-blue-700 font-normal mt-4 text-white px-6 py-2 xl:px-7 xl:py-3 lg:px-6 lg:py-2  transition-all hover:scale-110 ">
                 Join Our Courses
               </button>
             </a>
