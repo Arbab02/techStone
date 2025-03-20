@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
+import ImageSlider from './components/ImageSlider.jsx';
 import Services from './components/Services.jsx';
 import About from './components/About.jsx';
 import WhyUs from './components/WhyUs.jsx';
@@ -16,6 +17,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <ImageSlider />
       <About />
       <WhyUs />
       <Services />
