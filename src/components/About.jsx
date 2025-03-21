@@ -3,7 +3,7 @@ const About = () => {
     <section className="  text-[#020D36] bg-white">
       <div className="container px-5 py-5 mx-auto">
         <div className="flex flex-col text-center w-full ">
-          <h1 className="text-4xl font-extrabold title-font mt-12 mb-4 ">
+          <h1 className="text-4xl font-extrabold title-font mt-6 mb-4 ">
             ABOUT US
           </h1>
         </div>
