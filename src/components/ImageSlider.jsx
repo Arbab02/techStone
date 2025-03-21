@@ -11,13 +11,13 @@ const Clients = () => {
   return (
     <section id="clients" className="bg-white py-8">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-20">
+        <div className="flex flex-wrap justify-center items-center gap-16 md:gap-28">
           {clients.map((client, index) => (
             <img
               key={index}
               src={client}
               alt={`Client ${index + 1}`}
-              className="w-16 sm:w-20 md:w-[8%] h-auto grayscale hover:grayscale-0 hover:scale-110 transition-all duration-300"
+              className="w-14 sm:w-20 md:w-[6%] h-auto grayscale hover:grayscale-0 hover:scale-110 transition-all duration-300"
             />
           ))}
         </div>
