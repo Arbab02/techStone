@@ -41,7 +41,7 @@ const Hero = () => {
       variants={containerVariants}
       className="  pt-[7rem] bg-white  body-font bg-gradient-to-tl from-[#000000] via-[#020D36] to-[#000000]"
     >
-      <div className="container mx-auto flex  px-8 py-2 md:flex-row flex-col items-center">
+      <div className="container mx-auto flex  xl:px-20 px-12 py-1 md:flex-row flex-col items-center">
         {/* mb-16 property was here below */}
         <motion.div
           className="lg:flex-grow md:w-1/2 lg:pr-24   md:pr-16 flex flex-col md:items-start md:text-left mb-6  md:mb-0 items-center text-center"
@@ -62,7 +62,7 @@ const Hero = () => {
             We are team of talented designers making websites with ReactJS &
             TailwindCSS
             <a href="/addTopic">
-             <button className="block mx-auto lg:mx-0  xl:mx-0 md:mx-0 rounded-full xl:text-xl lg:text-lg text-base bg-gradient-to-tl from-blue-600 via-[#071655] to-blue-700 font-normal mt-4 text-white px-6 py-2 xl:px-7 xl:py-3 lg:px-6 lg:py-2  transition-all hover:scale-110 ">
+              <button className="block mx-auto lg:mx-0  xl:mx-0 md:mx-0 rounded-full xl:text-xl lg:text-lg text-base bg-gradient-to-tl from-blue-700 via-[#071655] to-blue-800 font-normal mt-4 text-white px-6 py-2 xl:px-6 xl:py-3 lg:px-6 lg:py-2  transition-all hover:scale-110 ">
                 Join Our Courses
               </button>
             </a>
@@ -74,7 +74,7 @@ const Hero = () => {
         </motion.div>
         {/* pl-8 property was here below */}
         <motion.div
-          className="lg:max-w-xl  lg:w-1/2 md:w-3/4 w-full"
+          className="lg:max-w-lg  lg:w-1/2 md:w-3/4 w-full"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
