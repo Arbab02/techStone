@@ -17,7 +17,7 @@ const Clients = () => {
               key={index}
               src={client}
               alt={`Client ${index + 1}`}
-              className="w-14 sm:w-24 md:w-[6%] h-auto grayscale hover:grayscale-0 hover:scale-110 transition-all duration-300"
+              className="w-16 sm:w-24 md:w-[6%] h-auto grayscale hover:grayscale-0 hover:scale-110 transition-all duration-300"
             />
           ))}
         </div>
