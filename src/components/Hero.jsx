@@ -39,7 +39,7 @@ const Hero = () => {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="  pt-[7rem] bg-white  body-font bg-gradient-to-tl from-[#000000] via-[#020D36] to-[#000000]"
+      className="  pt-[7rem]   body-font bg-gradient-to-tl from-[#000000] via-[#020D36] to-[#000000]"
     >
       <div className="container mx-auto flex  xl:px-20 px-12 py-1 md:flex-row flex-col items-center">
         {/* mb-16 property was here below */}
