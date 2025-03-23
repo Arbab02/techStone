@@ -1,99 +1,55 @@
-import React from "react";
+import React from 'react';
 
 const Contact = () => {
   return (
-    <section className="text-gray-600 body-font bg-[#050816] relative">
-      <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg  overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-          <iframe
-            width="100%"
-            height="100%"
-            className="absolute inset-0"
-            
-            title="map"
-            
-            src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
-            style={{ filter: "brightness(65%) " }}
-          ></iframe>
-          <div className="bg-white relative   flex flex-wrap py-6 rounded shadow-md">
-            <div className="lg:w-1/2 px-6 ">
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                ADDRESS
-              </h2>
-              <p className="mt-1">
-                Photo booth tattooed prism, portland taiyaki hoodie neutra
-                typewriter
-              </p>
-            </div>
-            <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                EMAIL
-              </h2>
-              <a className="text-indigo-500 leading-relaxed">
-                example@email.com
-              </a>
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
-                PHONE
-              </h2>
-              <p className="leading-relaxed">123-456-7890</p>
-            </div>
+    <section className="text-gray-600 font-sans body-font bg-white relative py-16 px-5 md:px-10 lg:px-32">
+      <h1 className="text-3xl md:text-4xl text-[#020D36] text-center font-extrabold title-font mb-4">
+        CONTACT US
+      </h1>
+      <div className="bg-blue-400 h-[3px] w-12 mx-auto mb-8"></div>
+      <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start lg:space-x-10">
+        {/* Map Section */}
+        <div className="lg:w-1/2 w-full h-[50vh] md:h-[80vh] border-t-4 border-blue-400 rounded overflow-hidden shadow-lg relative flex flex-col items-center p-6">
+          <div className="w-full mb-4">
+            <h2 className="text-xl font-bold text-gray-700">Location:</h2>
+            <p className="text-gray-500">123 Business Street, City, Country</p>
+            <h2 className="text-xl font-bold text-gray-700 mt-3">Email:</h2>
+            <a className="text-gray-500">info@example.com</a>
+            <h2 className="text-xl font-bold text-gray-700 mt-3">Call:</h2>
+            <p className="text-gray-500">123-456-7890</p>
+          </div>
+          <div className="w-[100%] h-2/3 mt-auto">
+            <iframe
+              className="w-full h-full "
+              title="map"
+              src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+            ></iframe>
           </div>
         </div>
-        <div className="lg:w-1/3 md:w-1/2 bg-[#050816] flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-          <h2 className="text-white text-lg mb-1 font-medium title-font">
-            Feedback
-          </h2>
-          <p className="leading-relaxed mb-5 text-white">
-            Post-ironic portland shabby chic echo park, banjo fashion axe
-          </p>
-          <div className="relative mb-4">
-            <label
-              htmlFor="name"
-              className="leading-7 text-sm text-white"
-            >
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="w-full bg-white rounded-full border border-gray-300  focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
+
+        {/* Contact Form Section */}
+        <div className="lg:w-2/3 w-full border-t-4 border-blue-400 bg-white text-gray-600 p-6 md:p-8 rounded shadow-xl mt-10 lg:mt-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label htmlFor="name" className="block text-lg">Your Name</label>
+              <input type="text" id="name" name="name" className="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1 focus:ring-1 focus:ring-blue-500 outline-none" />
+            </div>
+            <div>
+              <label htmlFor="email" className="block text-lg">Your Email</label>
+              <input type="email" id="email" name="email" className="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1 focus:ring-1 focus:ring-blue-500 outline-none" />
+            </div>
           </div>
-          <div className="relative mb-4">
-            <label
-              htmlFor="email"
-              className="leading-7 text-sm text-white"
-            >
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="w-full bg-white rounded-full border border-gray-300  focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
+          <div className="mt-4">
+            <label htmlFor="subject" className="block text-lg">Subject</label>
+            <input type="text" id="subject" name="subject" className="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1 focus:ring-1 focus:ring-blue-500 outline-none" />
           </div>
-          <div className="relative mb-4">
-            <label
-              htmlFor="message"
-              className="leading-7 text-sm text-white"
-            >
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              className="w-full bg-white rounded-xl border border-gray-300 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-            ></textarea>
+          <div className="mt-4">
+            <label htmlFor="message" className="block text-lg">Message</label>
+            <textarea id="message" name="message" className="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1 focus:ring-1 focus:ring-blue-500 outline-none h-40 resize-none"></textarea>
           </div>
-          <button className="text-white bg-indigo-700 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">
-            Submit
+          <button className="block w-full md:w-auto mx-auto mt-6 rounded-full text-lg bg-blue-500 text-white px-8 py-3 transition-all hover:scale-105">
+            Send Message
           </button>
-          <p className="text-xs text-gray-500 mt-3">
-            Chicharrones blog helvetica normcore iceland tousled brook viral
-            artisan.
-          </p>
         </div>
       </div>
     </section>
