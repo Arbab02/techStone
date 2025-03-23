@@ -8,7 +8,7 @@ import 'slick-carousel/slick/slick-theme.css';
 const testimonials = [
   {
     name: 'Ashneer Grover',
-    role: 'Co- Founder of BharatPe',
+    role: 'Co-Founder of BharatPe',
     feedback:
       'This company is simply the best. Excellent service and a dedicated team!',
     image:
@@ -16,7 +16,7 @@ const testimonials = [
   },
   {
     name: 'Haris Ali Khan',
-    role: 'Founder of CodeWithHarry,',
+    role: 'Founder of CodeWithHarry',
     feedback:
       'Their solutions are top-notch! Highly recommended for web development and digital marketing.',
     image:
@@ -36,56 +36,62 @@ const TestimonialSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 1, // Show 3 testimonials at once
+    speed: 600,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    arrows: false,
+    slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024, // For tablets and smaller screens
-        settings: {
-          slidesToShow: 1,
-        },
+        breakpoint: 1024, // Tablets
+        settings: { slidesToShow: 1 },
       },
       {
-        breakpoint: 768, // For mobile screens
-        settings: {
-          slidesToShow: 1,
-        },
+        breakpoint: 768, // Mobiles
+        settings: { slidesToShow: 1 },
       },
     ],
   };
 
   return (
-    <section className="bg-white text-[#000925] py-20">
-      <div className="container mx-auto px-5">
+    <section className="bg-white text-[#000925] py-16">
+      <div className="container mx-auto px-6">
+        {/* Title */}
         <h2 className="text-4xl text-center font-extrabold title-font mb-4">
           TESTIMONIALS
         </h2>
-        <div className="bg-blue-400 h-[3px] w-[3.5%] mx-auto "></div>
+        <div className="bg-blue-400 h-[3px] w-12 mx-auto mb-6"></div>
 
+        {/* Testimonial Slider */}
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
             <div key={index} className="p-4">
-              <div className="bg-gradient-to-tr from-[#000925] via-[#021246] to-[#000925]  p-6 rounded-lg shadow-lg text-center">
+              <div className="bg-gradient-to-tr from-[#000925] via-[#021246] to-[#000925] p-8 rounded-lg shadow-xl text-center transform hover:scale-105 transition-all duration-300">
+                {/* Profile Image */}
                 <img
-                  className="w-36 h-36 rounded-full mx-auto mb-4"
+                  className="w-28 h-28 rounded-full mx-auto border-4 border-gray-300 shadow-lg"
                   src={testimonial.image}
                   alt={testimonial.name}
                 />
-                <div className="text-3xl mt-4 text-center text-yellow-500">
-                  <AiFillStar className="inline" />
-                  <AiFillStar className="inline" />
-                  <AiFillStar className="inline" />
-                  <AiFillStar className="inline" />
-                  <AiFillStar className="inline" />
+
+                {/* Star Ratings */}
+                <div className="text-3xl mt-4 text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <AiFillStar key={i} className="inline" />
+                  ))}
                 </div>
 
-                <p className="mt-3 text-gray-300 text-xl leading-relaxed">
+                {/* Feedback Text */}
+                <p className="mt-3 text-gray-300 text-lg leading-relaxed italic">
                   "{testimonial.feedback}"
                 </p>
 
+                {/* Quote Icon */}
                 <BiSolidQuoteAltLeft className="mx-auto my-4 text-5xl text-white" />
-                <h3 className="text-3xl font-normal text-white">
+
+                {/* Name & Role */}
+                <h3 className="text-2xl font-semibold text-white">
                   {testimonial.name}
                 </h3>
                 <p className="text-lg text-gray-400">{testimonial.role}</p>
