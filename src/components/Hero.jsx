@@ -51,7 +51,7 @@ const Hero = () => {
             className="title-font xl:text-6xl lg:text-5xl md:text-5xl sm:text-5xl text-5xl  mb-4 text-white font-bold"
             variants={childVariants}
           >
-            Better Solutions For Your&nbsp;
+            Best Solutions For Your&nbsp;
             {/* <br className="hidden lg:inline-block" /> */}
             <span className="text-blue-500  font-bold">Business!</span>
           </motion.h1>
