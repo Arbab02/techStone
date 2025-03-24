@@ -48,7 +48,7 @@ const Hero = () => {
           variants={containerVariants}
         >
           <motion.h1
-            className="title-font xl:text-6xl lg:text-5xl md:text-5xl sm:text-4xl text-4xl  mb-4 text-white font-bold"
+            className="title-font xl:text-6xl lg:text-5xl md:text-5xl sm:text-5xl text-5xl  mb-4 text-white font-bold"
             variants={childVariants}
           >
             Better Solutions For Your&nbsp;
