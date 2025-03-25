@@ -1,4 +1,7 @@
 import React from 'react';
+import { SlLocationPin } from 'react-icons/sl';
+import { MdOutlineMailOutline } from 'react-icons/md';
+import { MdOutlinePhoneAndroid } from 'react-icons/md';
 
 const Contact = () => {
   return (
@@ -11,18 +14,30 @@ const Contact = () => {
         {/* Map Section */}
         <div className="lg:w-[47%] w-full  border-t-4 border-blue-400 bg-white text-gray-600 p-6 md:px-8 md:py-8 rounded shadow-xl mt-10 lg:mt-0">
           <div className="w-full mb-4">
-            <h2 className="text-[1.4rem] font-bold text-gray-700">Location:</h2>
-            <p className="text-gray-500">
+            <div className="flex flex-col absolute md:mt-1 mt-2 items-center  justify-center  text-center  w-[3rem] h-[3rem] text-blue-400 bg-blue-100  rounded-full">
+              <SlLocationPin className="text-2xl" />
+            </div>
+            <h2 className="text-[1.4rem] ml-16 inline font-bold text-[#37517e]">
+              Location:
+            </h2>
+            <p className="text-gray-500 ml-16">
               A108 Adam Street, New York, NY 535022
             </p>
-            <h2 className="text-[1.4rem] font-bold text-gray-700 mt-3">
+            <div className="flex flex-col absolute md:mt-4 mt-3 items-center justify-center  text-center  w-[3rem] h-[3rem] text-blue-400 bg-blue-100  rounded-full">
+              <MdOutlineMailOutline className="text-2xl" />
+            </div>
+            <h2 className="text-[1.4rem] font-bold text-[#37517e] mt-3  ml-16">
               Email:
             </h2>
-            <a className="text-gray-500">info@example.com</a>
-            <h2 className="text-[1.4rem] font-bold text-gray-700 mt-3">
+
+            <a className="text-gray-500  ml-16">info@example.com</a>
+            <div className="flex flex-col absolute mt-4  items-center justify-center  text-center  w-[3rem] h-[3rem] text-blue-400 bg-blue-100  rounded-full">
+              <MdOutlinePhoneAndroid className="text-2xl" />
+            </div>
+            <h2 className="text-[1.4rem] font-bold text-[#37517e] mt-3 ml-16">
               Call:
             </h2>
-            <p className="text-gray-500">+1 5589 55488 55</p>
+            <p className="text-gray-500 ml-16">+1 5589 55488 55</p>
           </div>
           <div className="w-[100%] h-64 mt-auto">
             <iframe
