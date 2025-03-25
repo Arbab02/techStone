@@ -9,10 +9,10 @@ const Contact = () => {
       <h1 className="text-3xl md:text-4xl text-[#020D36] text-center font-extrabold title-font mb-4">
         CONTACT US
       </h1>
-      <div className="bg-blue-400 h-[3px] w-12 mx-auto mb-8"></div>
+      <div className="bg-blue-400 h-[3px] w-10 mx-auto mb-8"></div>
       <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start lg:space-x-6">
         {/* Map Section */}
-        <div className="lg:w-[47%] w-full  border-t-4 border-blue-400 bg-white text-gray-600 p-6 md:px-8 md:py-8 rounded shadow-xl mt-10 lg:mt-0">
+        <div className="lg:w-[47%] w-full  border-t-4 border-blue-400 bg-white text-gray-600 p-6 md:px-8 md:py-8 rounded shadow-xl ">
           <div className="w-full mb-4">
             <div className="flex flex-col absolute md:mt-1 mt-2 items-center  justify-center  text-center  w-[3rem] h-[3rem] text-blue-400 bg-blue-100  rounded-full">
               <SlLocationPin className="text-2xl" />
@@ -95,7 +95,7 @@ const Contact = () => {
               className="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1 focus:ring-1 focus:ring-blue-500 outline-none h-44 resize-none"
             ></textarea>
           </div>
-          <button className="block w-full md:w-auto mx-auto mt-6 rounded-full text-lg bg-blue-500 text-white px-8 py-3 transition-all hover:scale-105">
+          <button className="block mx-auto  rounded-full  lg:text-lg text-base bg-blue-500 font-normal mt-4 text-white px-6 py-2 xl:px-8 xl:py-3 lg:px-6 lg:py-2  transition-all hover:scale-110">
             Send Message
           </button>
         </div>
