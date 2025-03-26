@@ -5,14 +5,14 @@ import { MdOutlinePhoneAndroid } from 'react-icons/md';
 
 const Contact = () => {
   return (
-    <section className="text-gray-600 font-sans body-font bg-white relative py-16 px-5 md:px-28">
-      <h1 className="text-3xl md:text-4xl text-[#020D36] text-center font-extrabold title-font mb-4">
+    <section className="text-gray-600  body-font bg-white relative py-16 px-5 md:px-28">
+      <h1 className="text-3xl md:text-4xl text-[#020D36] text-center tracking-tight font-extrabold title-font mb-4">
         CONTACT US
       </h1>
-      <div className="bg-blue-400 h-[3px] w-10 mx-auto mb-8"></div>
-      <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start lg:space-x-6">
+      <div className="bg-blue-400  h-[3px] w-10 mx-auto mb-8"></div>
+      <div className="container font-sans mx-auto flex flex-col lg:flex-row items-center lg:items-start lg:space-x-6">
         {/* Map Section */}
-        <div className="lg:w-[47%] w-full  border-t-4 border-blue-400 bg-white text-gray-600 p-6 md:px-8 md:py-8 rounded shadow-xl ">
+        <div className="lg:w-[47%] w-full  border-t-4 border-blue-400 bg-white text-gray-600 p-6 md:px-8 md:py-10 rounded shadow-xl ">
           <div className="w-full mb-4">
             <div className="flex flex-col absolute md:mt-1 mt-2 items-center  justify-center  text-center  w-[3rem] h-[3rem] text-blue-400 bg-blue-100  rounded-full">
               <SlLocationPin className="text-2xl" />
@@ -23,18 +23,18 @@ const Contact = () => {
             <p className="text-gray-500 ml-16">
               A108 Adam Street, New York, NY 535022
             </p>
-            <div className="flex flex-col absolute md:mt-4 mt-3 items-center justify-center  text-center  w-[3rem] h-[3rem] text-blue-400 bg-blue-100  rounded-full">
-              <MdOutlineMailOutline className="text-2xl" />
+            <div className="flex flex-col absolute md:mt-5 sm:mt-4 mt-4 items-center justify-center  text-center  w-[3rem] h-[3rem] text-blue-400 bg-blue-100  rounded-full">
+              <MdOutlineMailOutline className="text-2xl " />
             </div>
-            <h2 className="text-[1.4rem] font-bold text-[#37517e] mt-3  ml-16">
+            <h2 className="text-[1.4rem] font-bold text-[#37517e] mt-4  ml-16">
               Email:
             </h2>
 
             <a className="text-gray-500  ml-16">info@example.com</a>
-            <div className="flex flex-col absolute mt-4  items-center justify-center  text-center  w-[3rem] h-[3rem] text-blue-400 bg-blue-100  rounded-full">
+            <div className="flex flex-col absolute sm:mt-4 lg:mt-5 mt-4  items-center justify-center  text-center  w-[3rem] h-[3rem] text-blue-400 bg-blue-100  rounded-full">
               <MdOutlinePhoneAndroid className="text-2xl" />
             </div>
-            <h2 className="text-[1.4rem] font-bold text-[#37517e] mt-3 ml-16">
+            <h2 className="text-[1.4rem] font-bold text-[#37517e] mt-4 ml-16">
               Call:
             </h2>
             <p className="text-gray-500 ml-16">+1 5589 55488 55</p>
@@ -92,7 +92,7 @@ const Contact = () => {
             <textarea
               id="message"
               name="message"
-              className="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1 focus:ring-1 focus:ring-blue-500 outline-none h-44 resize-none"
+              className="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1 focus:ring-1 focus:ring-blue-500 outline-none h-52 resize-none"
             ></textarea>
           </div>
           <button className="block mx-auto  rounded-full  lg:text-lg text-base bg-blue-500 font-normal mt-4 text-white px-6 py-2 xl:px-8 xl:py-3 lg:px-6 lg:py-2  transition-all hover:scale-110">
