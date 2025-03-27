@@ -9,7 +9,7 @@ const Clients = () => {
   const clients = [client1, client2, client3, client4, client5, client6];
 
   return (
-    <section id="clients" className="bg-gray-100 py-6">
+    <section id="clients" className="bg-gray-200 py-6">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-center items-center gap-16 md:gap-28">
           {clients.map((client, index) => (
