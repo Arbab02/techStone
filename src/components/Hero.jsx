@@ -61,7 +61,7 @@ const Hero = () => {
           >
             We are team of talented designers making websites with ReactJS &
             TailwindCSS
-            <button className="iconGradient text-white font-normal mt-4 mx-auto md:mx-0 px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition-all duration-300 flex items-center gap-2 text-sm md:text-xl">
+            <button className="iconGradient text-white font-medium md:font-normal mt-4 mx-auto md:mx-0 px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition-all duration-300 flex items-center gap-2 text-sm md:text-xl">
   <span className="w-5 h-5 bg-white rounded-full"></span>
   GET STARTED
 </button>
