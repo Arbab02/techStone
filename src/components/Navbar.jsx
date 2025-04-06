@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { IoIosSend } from "react-icons/io";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,14 +8,13 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        navRef.current.style.backgroundColor = '#000828'; // Change navbar background
+        navRef.current.style.backgroundColor = 'rgba(0, 8, 40, 0.8)'; // Slight transparency
         navRef.current.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)'; // Optional shadow
       } else {
-        navRef.current.style.backgroundColor = 'transparent'; // Reset background
+        navRef.current.style.backgroundColor = 'transparent'; // Even lighter transparency
         navRef.current.style.boxShadow = 'none'; // Reset shadow
       }
     };
@@ -27,7 +27,7 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <nav className="bg-[transparent] py-4 fixed w-full z-50 " ref={navRef}>
+    <nav className="bg-[transparent] py-3 fixed w-full z-50 " ref={navRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-20">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
@@ -86,16 +86,9 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div className="hidden md:flex space-x-8">
-            <a href="#" className="text-white hover:text-indigo-300 -rotate-45">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="size-6"
-              >
-                <path d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" />
-              </svg>
+          <div className="hidden   md:flex space-x-8 mr-8">
+            <a href="#" className="text-white text-2xl iconGradient rounded-full mt-1 p-3  transition-all hover:scale-125  ">
+            <IoIosSend />
             </a>
           </div>
 
@@ -126,7 +119,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`menu bg-[#050816] transition-all duration-300 overflow-hidden ${
+        className={`menu bgGradient rounded-xl transition-all duration-300 overflow-hidden ${
           isOpen ? 'max-h-500' : 'max-h-0'
         } md:hidden `}
       >
@@ -160,19 +153,11 @@ const Navbar = () => {
         >
           Contact
         </a>
-        <a
-          href="#"
-          className="block text-center px-4 py-2 text-gray-300 font-medium hover:text-indigo-300"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="size-6 -rotate-45"
-          >
-            <path d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" />
-          </svg>
-        </a>
+        <div className="flex ml-3 mb-2">
+            <a href="#" className="text-white text-2xl iconGradient rounded-full mt-1 p-2  transition-all hover:scale-125  ">
+            <IoIosSend />
+            </a>
+          </div>
       </div>
     </nav>
   );
