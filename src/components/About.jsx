@@ -18,15 +18,15 @@ const About = () => {
               irure dolor in reprehenderit in voluptate velit pariatur.
             </p>
             <p className="flex items-start gap-2 text-gray-700 text-lg">
-              <IoCheckmarkDoneSharp className="text-blue-400 text-xl mt-1" />
+              <IoCheckmarkDoneSharp className="text-blue-400 text-3xl sm:text-xl mt-[2px] sm:mt-1" />
               Ullamco laboris nisi ut aliquip ex ea commodo consequat
             </p>
             <p className="flex items-start gap-2 text-gray-700 text-lg ">
-              <IoCheckmarkDoneSharp className="text-blue-400 text-xl mt-1" />
+              <IoCheckmarkDoneSharp className="text-blue-400 text-3xl sm:text-xl mt-[2px] sm:mt-1" />
               Duis aute irure dolor in reprehenderit in voluptate velit
             </p>
             <p className="flex items-start gap-2 text-gray-700 text-lg ">
-              <IoCheckmarkDoneSharp className="text-blue-400 text-xl mt-1" />
+              <IoCheckmarkDoneSharp className="text-blue-400 text-3xl sm:text-xl mt-[2px] sm:mt-1" />
               Ullamco laboris nisi ut aliquip ex ea commodo consequat
             </p>
           </div>
