@@ -153,7 +153,7 @@ const Navbar = () => {
         >
           Contact
         </a>
-        <div className="flex ml-3 mb-2">
+        <div className="flex ml-4 mb-2">
             <a href="#" className="text-white text-2xl iconGradient rounded-full mt-1 p-2  transition-all hover:scale-125  ">
             <IoIosSend />
             </a>
