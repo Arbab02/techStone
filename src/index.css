@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .iconGradient {
+    @apply bg-gradient-to-tr from-[#162E8D] via-[#1C38A8] to-[#6985F5];
+  }
+  .bgGradient {
+    @apply bg-gradient-to-tr from-[#000000] via-[#020821] to-[#020D36];
+  }
+}
 body {
   font-family: 'Afacad Flux', sans-serif;
   /* /* font-family: "Dancing Script", cursive; */
