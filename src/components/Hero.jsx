@@ -61,22 +61,14 @@ const Hero = () => {
           >
             We are team of talented designers making websites with ReactJS &
             TailwindCSS
-            <button className="iconGradient text-white font-medium md:font-normal mt-4 mx-auto md:mx-0 px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition-all duration-300 flex items-center gap-2 text-sm md:text-xl">
-  <span className="w-5 h-5 bg-white rounded-full"></span>
+            <button className="iconGradient text-white font-medium md:font-normal mt-4 mx-auto md:mx-0 px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition-all duration-300 flex items-center gap-2 text-base md:text-xl">
+  <span className="md:w-5 md:h-5 w-4 h-4 bg-white rounded-full"></span>
   GET STARTED
 </button>
 
-            {/* <a href="/addTopic">
-              <button className="block  text-base font-light text-center text-white  mx-auto md:mx-0 xl:text-2xl lg:text-lg  xl:mx-0 md:mx-0  xl:px-7 xl:py-3 lg:px-6 lg:py-2 px-6 py-2 rounded-full   bg-gradient-to-tr from-[#071241] via-[#071241] to-[#2149EC] mt-4  transition-all hover:scale-110 ">
-              GET STARTED
-              
-              </button>
-            </a> */}
+           
           </motion.p>
-          {/* <motion.div
-            className="flex justify-center"
-            variants={childVariants}
-          ></motion.div> */}
+       
         </motion.div>
         {/* pl-8 property was here below */}
         <motion.div
