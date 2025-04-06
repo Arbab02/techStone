@@ -39,7 +39,7 @@ const Hero = () => {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="  pt-[7rem]   body-font bg-gradient-to-tl from-[#000000] via-[#020D36] to-[#000000]"
+      className="  pt-[7rem] bgGradient"
     >
       <div className="container mx-auto flex  xl:px-20 px-12 py-1 md:flex-row flex-col items-center">
         {/* mb-16 property was here below */}
@@ -48,7 +48,7 @@ const Hero = () => {
           variants={containerVariants}
         >
           <motion.h1
-            className="title-font xl:text-6xl lg:text-5xl md:text-5xl sm:text-5xl text-5xl  mb-4 text-white font-bold"
+            className="xl:text-6xl lg:text-5xl md:text-5xl sm:text-5xl text-5xl  mb-4 text-white font-bold"
             variants={childVariants}
           >
             Best Solutions For Your&nbsp;
@@ -56,16 +56,22 @@ const Hero = () => {
             <span className="text-blue-500  font-bold">Business!</span>
           </motion.h1>
           <motion.p
-            className="mb-8 leading-relaxed xl:text-3xl lg:text-2xl md:text-xl text-xl text-center md:text-justify text-white"
+            className="mb-8 leading-relaxed xl:text-3xl lg:text-2xl md:text-xl text-2xl text-center md:text-justify font-light text-gray-300"
             variants={childVariants}
           >
             We are team of talented designers making websites with ReactJS &
             TailwindCSS
-            <a href="/addTopic">
-              <button className="block mx-auto lg:mx-0  xl:mx-0 md:mx-0 rounded-full xl:text-xl lg:text-lg text-base bg-gradient-to-tl from-blue-700 via-[#071655] to-blue-800 font-normal mt-4 text-white px-6 py-2 xl:px-6 xl:py-3 lg:px-6 lg:py-2  transition-all hover:scale-110 ">
-                Join Our Courses
+            <button className="iconGradient text-white font-normal mt-4 mx-auto md:mx-0 px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition-all duration-300 flex items-center gap-2 text-sm md:text-xl">
+  <span className="w-5 h-5 bg-white rounded-full"></span>
+  GET STARTED
+</button>
+
+            {/* <a href="/addTopic">
+              <button className="block  text-base font-light text-center text-white  mx-auto md:mx-0 xl:text-2xl lg:text-lg  xl:mx-0 md:mx-0  xl:px-7 xl:py-3 lg:px-6 lg:py-2 px-6 py-2 rounded-full   bg-gradient-to-tr from-[#071241] via-[#071241] to-[#2149EC] mt-4  transition-all hover:scale-110 ">
+              GET STARTED
+              
               </button>
-            </a>
+            </a> */}
           </motion.p>
           {/* <motion.div
             className="flex justify-center"
