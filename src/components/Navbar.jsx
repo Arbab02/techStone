@@ -12,7 +12,7 @@ const Navbar = () => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
         navRef.current.style.backgroundColor = 'rgba(0, 8, 40, 0.8)'; // Slight transparency
-        navRef.current.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)'; // Optional shadow
+       
       } else {
         navRef.current.style.backgroundColor = 'transparent'; // Even lighter transparency
         navRef.current.style.boxShadow = 'none'; // Reset shadow
@@ -86,8 +86,8 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div className="hidden md:flex space-x-8 mr-5">
-            <a href="#" className="text-white text-2xl iconGradient rounded-full mt-1 p-3  transition-all hover:scale-125  ">
+          <div className="hidden   md:flex space-x-8 mr-5">
+            <a href="#" className="text-white text-2xl iconGradient rounded-full mt-1 p-3  transition-all hover:scale-125">
             <IoIosSend />
             </a>
           </div>
