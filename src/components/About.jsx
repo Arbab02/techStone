@@ -39,7 +39,7 @@ const About = () => {
             </p>
 
             <a className="inline-flex items-center" href="#">
-              <button className="block mx-auto md:mx-0 rounded-full text-lg bg-transparent font-normal px-8 py-2 mt-4 text-blue-500 border border-blue-500 transition-all hover:scale-105">
+              <button className="lmBtnResp lmBtnStyles  mt-4 ">
                 Learn More
               </button>
             </a>
