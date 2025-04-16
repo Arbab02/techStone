@@ -44,7 +44,7 @@ const Hero = () => {
       <div className="container mx-auto flex heroResp md:flex-row flex-col items-center">
       
         <motion.div
-          className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-6 md:mb-0 items-center text-center"
+          className="lg:flex-grow  md:w-1/2 lg:pr-20 md:pr-16 flex flex-col md:items-start md:text-left mb-6 md:mb-0 items-center text-center"
           variants={containerVariants}
         >
           <motion.h1
@@ -53,7 +53,7 @@ const Hero = () => {
           >
             Best Solutions For Your&nbsp;
          
-            <span className="text-blue-500  font-bold">Business!</span>
+            <span className="text-blue-500  font-bold">Basiness!</span>
           </motion.h1>
           <motion.p
             className="mb-8 leading-relaxed heroParaResp text-center md:text-justify font-light text-gray-300"
@@ -72,7 +72,7 @@ const Hero = () => {
         </motion.div>
      
         <motion.div
-          className="lg:max-w-lg  lg:w-1/2 md:w-3/4 w-full"
+          className="lg:max-w-lg lg:w-1/2 md:w-3/4 w-full"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
