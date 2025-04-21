@@ -27,14 +27,14 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <nav className="bg-[transparent] py-3 fixed w-full z-50 " ref={navRef}>
+    <nav className="bg-[transparent] md:py-3 py-1 fixed w-full z-50 " ref={navRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-20">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#" className="flex items-center">
-              <p className="text-blue-500 text-4xl font-bold">
-                {' '}
+              <p className="text-blue-500 text-4xl  font-bold">
+        
                 <span className="text-white">Tech</span>Stone
               </p>
             </a>
@@ -86,7 +86,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div className="hidden   md:flex space-x-8 mr-9">
+          <div className="hidden   md:flex space-x-8 mr-14">
             <a href="#" className="text-white text-2xl iconGradient rounded-full mt-1 p-3  transition-all hover:scale-125">
             <IoIosSend />
             </a>
