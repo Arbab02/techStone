@@ -6,6 +6,8 @@ import Services from './components/Services.jsx';
 import About from './components/About.jsx';
 import WhyUs from './components/WhyUs.jsx';
 import TestimonialSlider from './components/TestimonialSlider.jsx';
+import TeamSection from './components/TeamSection.jsx';
+import FAQAccordion from './components/FAQAccordion.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 // import './App.css'
@@ -22,6 +24,8 @@ function App() {
       <WhyUs />
       {/* <Services /> */}
       <TestimonialSlider />
+      <TeamSection />
+      <FAQAccordion />
       <Contact />
       <Footer />
     </>
