@@ -35,7 +35,7 @@ const teamMembers = [
 export default function TeamSection() {
   return (
     <section className="py-16  bg-gray-100 text-center">
-      <div className="max-w-6xl px-2 mx-auto">
+      <div className="max-w-6xl px-3 md:px-2 mx-auto">
       <div className="text-center mb-6">
           <h1 className="text-3xl md:text-4xl font-extrabold">TEAM</h1>
           <div className="bg-blue-400 h-[3px] w-[40px] mx-auto mt-2"></div>
@@ -50,7 +50,7 @@ export default function TeamSection() {
           {teamMembers.map((member, index) => (
             <motion.div
               key={index}
-              className="flex items-center p-6 bg-white hover:md: cursor-pointer rounded-md shadow-lg"
+              className="flex items-center p-5 md:p-6 bg-white hover cursor-pointer rounded-md shadow-lg"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
@@ -63,7 +63,7 @@ export default function TeamSection() {
               />
               <div className="text-left">
                 <h3 className="text-blue-900 text-xl font-bold mb-1">{member.name}</h3>
-                <p className=" text-gray-700 text-[15px] mb-1 ">{member.title}</p>
+                <p className=" text-gray-700 text-[15px] font-medium mb-1 ">{member.title}</p>
                 <p className=" text-gray-700 text-[15px] md:pr-16 mb-3 ">{member.desc}</p>
                 <div className="flex space-x-2 text-blue-900 text-md">
                   <span className='flex w-9 h-9 bg-gray-200 hover:bg-blue-400 cursor-pointer transition-all hover:text-white items-center justify-center rounded-full'>
