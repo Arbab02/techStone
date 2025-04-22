@@ -86,7 +86,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div className="hidden   md:flex space-x-8 mr-14">
+          <div className="hidden   md:flex space-x-8 mr-12">
             <a href="#" className="text-white text-2xl iconGradient rounded-full mt-1 p-3  transition-all hover:scale-125">
             <IoIosSend />
             </a>
