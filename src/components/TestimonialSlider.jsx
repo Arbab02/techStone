@@ -18,7 +18,7 @@ const testimonials = [
     name: 'Haris Ali Khan',
     role: 'Founder of CodeWithHarry',
     feedback:
-      'Their solutions are top-notch! Highly recommended for web development and digital marketing.',
+      'This company is simply the best. Excellent service and a dedicated team!',
     image:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjN3kznrKIXYxgMR8qEXFKLUCoXYzAXpe2gYiDrNOVyQ1qg1yGHt9MKr1T3Sj069LnTZY&usqp=CAU',
   },
@@ -26,7 +26,7 @@ const testimonials = [
     name: 'Adian Hadjin',
     role: 'Founder of JavaScript Mastery',
     feedback:
-      'They helped grow my business with amazing designs and marketing strategies.',
+      'This company is simply the best. Excellent service and a dedicated team!',
     image:
       'https://images.contactout.com/profiles/1fe8e1e897f8ffd61cb4026329402c9f',
   },
@@ -55,7 +55,7 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <section className="bg-white text-[#000925] py-16">
+    <section className="bg-gray-100 text-[#000925] py-10">
       <div className="container mx-auto px-6">
         {/* Title */}
         <h2 className="text-4xl text-center font-extrabold title-font mb-4">
@@ -67,10 +67,10 @@ const TestimonialSlider = () => {
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
             <div key={index} className="p-4">
-              <div className="bg-gradient-to-tr from-[#000925] via-[#021246] to-[#000925] p-8 rounded-lg shadow-xl text-center transform hover:scale-105 transition-all duration-300">
+              <div className="bg-white font-sans p-8 rounded-md shadow-xl text-center transform hover:scale-105 transition-all duration-300">
                 {/* Profile Image */}
                 <img
-                  className="w-28 h-28 rounded-full mx-auto border-4 border-gray-300 shadow-lg"
+                  className="w-28 h-28 rounded-full mx-auto border-4 border-blue-500"
                   src={testimonial.image}
                   alt={testimonial.name}
                 />
@@ -83,18 +83,18 @@ const TestimonialSlider = () => {
                 </div>
 
                 {/* Feedback Text */}
-                <p className="mt-3 text-gray-300 text-lg leading-relaxed italic">
+                <p className="mt-3 text-gray-600 text-lg md:text-xl leading-relaxed italic">
                   "{testimonial.feedback}"
                 </p>
 
                 {/* Quote Icon */}
-                <BiSolidQuoteAltLeft className="mx-auto my-4 text-5xl text-white" />
+                <BiSolidQuoteAltLeft className="mx-auto my-4 text-5xl text-gray-600" />
 
                 {/* Name & Role */}
-                <h3 className="text-2xl font-semibold text-white">
+                <h3 className="text-2xl font-semibold text-gray-500">
                   {testimonial.name}
                 </h3>
-                <p className="text-lg text-gray-400">{testimonial.role}</p>
+                <p className="text-lg text-gray-500">{testimonial.role}</p>
               </div>
             </div>
           ))}
