@@ -98,7 +98,7 @@ const Contact = () => {
       className="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1 focus:ring-1 focus:ring-blue-500 outline-none h-52 resize-none"
     ></textarea>
   </div>
-  <button className="block mx-auto rounded-full lg:text-lg text-base bg-blue-500 font-normal mt-[22px] text-white px-6 py-2 xl:px-4 xl:py-2 lg:px-6 lg:py-2 transition-all hover:scale-110 flex items-center gap-2">
+  <button className="block mx-auto rounded-full lg:text-lg text-base bg-blue-500 font-normal mt-[22px] text-white px-4 py-2 xl:px-4 xl:py-2 lg:px-6 lg:py-2 transition-all hover:scale-110 flex items-center gap-2">
     <FaPaperPlane className="text-white" /> Send Message
   </button>
 </form>
