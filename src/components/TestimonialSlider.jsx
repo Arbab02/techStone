@@ -24,7 +24,7 @@ const testimonials = [
   },
   {
     name: 'Adian Hadjin',
-    role: 'Founder of JavaScript Mastery',
+    role: 'Founder of JS Mastery',
     feedback:
       'This company is simply the best. Excellent service and a dedicated team!',
     image:
@@ -91,7 +91,7 @@ const TestimonialSlider = () => {
                 <BiSolidQuoteAltLeft className="mx-auto my-4 text-5xl text-gray-600" />
 
                 {/* Name & Role */}
-                <h3 className="text-2xl font-semibold text-gray-500">
+                <h3 className="text-2xl font-normal text-gray-500">
                   {testimonial.name}
                 </h3>
                 <p className="text-lg text-gray-500">{testimonial.role}</p>
