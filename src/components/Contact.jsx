@@ -2,6 +2,7 @@ import React from 'react';
 import { SlLocationPin } from 'react-icons/sl';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { MdOutlinePhoneAndroid } from 'react-icons/md';
+import { FaUser, FaEnvelope, FaTag, FaCommentDots, FaPaperPlane } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -12,7 +13,7 @@ const Contact = () => {
       <div className="bg-blue-400  h-[3px] w-10 mx-auto mb-8"></div>
       <div className="container font-sans mx-auto flex flex-col lg:flex-row items-center lg:items-start lg:space-x-6">
         {/* Map Section */}
-        <div className="lg:w-[47%] w-full  border-t-4 border-blue-400 bg-white text-gray-600 p-6 md:px-8 md:py-10 rounded shadow-xl ">
+        <div className="lg:w-[47%] w-full  border-t-4 border-b-4 border-blue-400 bg-white text-gray-600 p-6 md:px-8 md:py-10 rounded shadow-xl ">
           <div className="w-full mb-4">
             <div className="flex flex-col absolute md:mt-1 mt-2 items-center  justify-center  text-center  w-[3rem] h-[3rem] text-blue-400 bg-blue-100  rounded-full">
               <SlLocationPin className="text-2xl" />
@@ -48,57 +49,60 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Contact Form Section */}
-        <div className="lg:w-2/3 w-full  border-t-4 border-blue-400 bg-white text-gray-600 p-6 md:p-8 rounded shadow-2xl mt-10 lg:mt-0">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <label htmlFor="name" className="block text-lg">
-                Your Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1 focus:ring-1 focus:ring-blue-500 outline-none"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-lg">
-                Your Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1 focus:ring-1 focus:ring-blue-500 outline-none"
-              />
-            </div>
-          </div>
-          <div className="mt-4">
-            <label htmlFor="subject" className="block text-lg">
-              Subject
-            </label>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              className="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1 focus:ring-1 focus:ring-blue-500 outline-none"
-            />
-          </div>
-          <div className="mt-4">
-            <label htmlFor="message" className="block text-lg">
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              className="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1 focus:ring-1 focus:ring-blue-500 outline-none h-52 resize-none"
-            ></textarea>
-          </div>
-          <button className="block mx-auto  rounded-full  lg:text-lg text-base bg-blue-500 font-normal mt-4 text-white px-6 py-2 xl:px-8 xl:py-3 lg:px-6 lg:py-2  transition-all hover:scale-110">
-            Send Message
-          </button>
-        </div>
+       
+
+{/* Contact Form Section */}
+<form className="lg:w-2/3 w-full border-t-4 border-b-4 border-blue-400 bg-white text-gray-600 p-6 md:p-8 rounded shadow-2xl mt-10 lg:mt-0">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div>
+      <label htmlFor="name" className="block text-lg flex items-center gap-2">
+        <FaUser className="text-blue-500" /> Your Name
+      </label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        className="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1 focus:ring-1 focus:ring-blue-500 outline-none"
+      />
+    </div>
+    <div>
+      <label htmlFor="email" className="block text-lg flex items-center gap-2">
+        <FaEnvelope className="text-blue-500" /> Your Email
+      </label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        className="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1 focus:ring-1 focus:ring-blue-500 outline-none"
+      />
+    </div>
+  </div>
+  <div className="mt-4">
+    <label htmlFor="subject" className="block text-lg flex items-center gap-2">
+      <FaTag className="text-blue-500" /> Subject
+    </label>
+    <input
+      type="text"
+      id="subject"
+      name="subject"
+      className="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1 focus:ring-1 focus:ring-blue-500 outline-none"
+    />
+  </div>
+  <div className="mt-4">
+    <label htmlFor="message" className="block text-lg flex items-center gap-2">
+      <FaCommentDots className="text-blue-500" /> Message
+    </label>
+    <textarea
+      id="message"
+      name="message"
+      className="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1 focus:ring-1 focus:ring-blue-500 outline-none h-52 resize-none"
+    ></textarea>
+  </div>
+  <button className="block mx-auto rounded-full lg:text-lg text-base bg-blue-500 font-normal mt-[22px] text-white px-6 py-2 xl:px-4 xl:py-2 lg:px-6 lg:py-2 transition-all hover:scale-110 flex items-center gap-2">
+    <FaPaperPlane className="text-white" /> Send Message
+  </button>
+</form>
+
       </div>
     </section>
   );
