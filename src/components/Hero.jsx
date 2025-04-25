@@ -53,7 +53,7 @@ const Hero = () => {
           >
             Best Solutions For Your&nbsp;
          
-            <span className="text-blue-500  font-bold">Basiness!</span>
+            <span className="text-blue-500  font-bold">Business!</span>
           </motion.h1>
           <motion.p
             className="mb-8 leading-relaxed heroParaResp text-center md:text-justify font-light text-gray-300"
