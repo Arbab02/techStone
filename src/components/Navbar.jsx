@@ -43,43 +43,43 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 mx-auto">
             <a
-              href="/"
+              href="/#hero"
               className="text-white font-normal text-lg hover:text-indigo-300"
             >
               Home
             </a>
             <a
-              href="/about"
+              href="/#about"
               className="text-white font-normal text-lg hover:text-indigo-300"
             >
               About
             </a>
             <a
-              href="/services"
+              href="/#services"
               className="text-white font-normal text-lg hover:text-indigo-300"
             >
               Services
             </a>
             <a
-              href="/portfolio"
+              href="/#pricing"
               className="text-white font-normal text-lg hover:text-indigo-300"
             >
-              Portfolio
+              Pricing
             </a>
             <a
-              href="/contact"
+              href="/#team"
               className="text-white font-normal text-lg hover:text-indigo-300"
             >
               Team
             </a>
             <a
-              href="/contact"
+              href="/#reviews"
               className="text-white font-normal text-lg hover:text-indigo-300"
             >
-              Events
+              Reviews
             </a>
             <a
-              href="/contact"
+              href="/#contact"
               className="text-white font-normal text-lg hover:text-indigo-300"
             >
               Contact
@@ -119,36 +119,48 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`menu bgGradient rounded-xl transition-all duration-300 overflow-hidden ${
-          isOpen ? 'max-h-500' : 'max-h-0'
+        className={`menu bgGradient rounded-xl  transition-all duration-300 overflow-hidden ${
+          isOpen ? 'max-h-1000' : 'max-h-0'
         } md:hidden `}
       >
         <a
-          href="/"
+          href="/#hero"
           className="block px-4 py-2 text-gray-300  hover:text-indigo-300"
         >
           Home
         </a>
         <a
-          href="/about"
+          href="/#about"
           className="block px-4 py-2 text-gray-300  hover:text-indigo-300"
         >
           About
         </a>
         <a
-          href="/services"
+          href="/#services"
           className="block px-4 py-2 text-gray-300  hover:text-indigo-300"
         >
           Services
         </a>
         <a
-          href="/portfolio"
+          href="/#pricing"
           className="block px-4 py-2 text-gray-300  hover:text-indigo-300"
         >
-          Portfolio
+          Pricing
         </a>
         <a
-          href="/contact"
+          href="/#team"
+          className="block px-4 py-2 text-gray-300  hover:text-indigo-300"
+        >
+          Team
+        </a>
+        <a
+          href="/#reviews"
+          className="block px-4 py-2 text-gray-300  hover:text-indigo-300"
+        >
+          Reviews
+        </a>
+        <a
+          href="/#contact"
           className="block px-4 py-2 text-gray-300  hover:text-indigo-300"
         >
           Contact
