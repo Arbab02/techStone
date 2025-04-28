@@ -9,8 +9,8 @@
   .bgGradient {
     @apply bg-gradient-to-tr from-[#000000] via-[#020821] to-[#020D36];
   }
-  .heroResp {
-    @apply xl:px-20 2xl:px-52 px-12 py-1;
+  .heroResp{
+    @apply xl:px-20  2xl:px-52 px-12 py-1;
   }
   .heroHeadingResp {
     @apply xl:text-6xl lg:text-5xl md:text-5xl text-5xl;
@@ -37,6 +37,10 @@ body {
   /* font-family: 'Noto Sans JP ', 'sans-serif'; */
   
  
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .hero {
