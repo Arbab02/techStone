@@ -1,79 +1,77 @@
-import React, { useRef } from 'react';
-import Cuboid from '../assets/cuboid.png';
-import Cylinder from '../assets/cylinder.png';
-import Pill from '../assets/pill.png';
+"use client";
 
-const ServiceCard = ({ icon, title, description, bgColor, shadowColor }) => {
-  const cardItemRef = useRef(null);
+import { motion } from 'framer-motion';
+import { FaBullhorn, FaPencilRuler, FaSearch, FaGlobe, FaPaintBrush, FaFileAlt, FaChartLine } from 'react-icons/fa';
 
-  return (
-    <div className="rounded lg:mt-[12rem] lg:w-[31%] lg:h-[84%] xl:w-[31%] xl:h-[75%] text-center h-[50%] w-[85%] mt-20 p-5 mx-auto bg-gradient-to-tr from-[#0A0E21] via-[#110E3C] to-[#0A0E21] ">
-      <div
-        className={`mx-auto flex h-28 w-28 -translate-y-12 transform items-center justify-center rounded-full  ${bgColor}  ${shadowColor}`}
-        ref={cardItemRef}
-      >
-        {icon}
-      </div>
-      <h1 className="text-white mb-3 text-3xl font-medium lg:px-14">{title}</h1>
-      <p className="px-4 text-lg text-white">{description}</p>
-    </div>
-  );
-};
+const services = [
+  {
+    icon: <FaGlobe size={40} className="text-blue-500" />,
+    title: 'Software Development',
+    description: `We are your trusted partner for Software development services. At TechStone, we focus on creating visually stunning and highly functional websites that leave a lasting impact. Our mission is to build websites that not only look great but also perform exceptionally in today’s competitive digital landscape.`
+  },
+  {
+    icon: <FaBullhorn size={40} className="text-blue-500" />,
+    title: 'Digital Marketing',
+    description: `In order to improve your online presence and generate results, we provide a full range of digital marketing services. Our knowledgeable team has expertise in content creation, social media marketing, PPC advertising, SEO, and more. We customize our services to your unique needs, assisting you in productively reaching and engaging your target audience.`
+  },
+  {
+    icon: <FaSearch size={40} className="text-blue-500" />,
+    title: 'SEO',
+    description: `To help your company move up the search engine results pages and increase organic website traffic, TechStone offers professional SEO services. We conduct in-depth keyword research, optimize on-page content, improve website structure, and create high-quality backlinks. Our SEO strategies are data-driven, and ensuring your websites ranking.`
+  },
+  {
+    icon: <FaFileAlt size={40} className="text-blue-500" />,
+    title: 'Content Writing',
+    description: `TechStone provides exceptional content writing services that are adapted to your unique requirements. Our talented team of writers produces high-quality, compelling, and SEO-optimized content for websites, blogs, social media, and more. Whether you need engaging articles, persuasive copy for product descriptions, or captivating storytelling for your brand, our content got you covered.`
+  },
+  {
+    icon: <FaPaintBrush size={40} className="text-blue-500" />,
+    title: 'Graphic Designing',
+    description: `TechStone offers innovative graphic design solutions that elevate your brand's visual identity. Our creative team specializes in animated logos, brochure designs, and marketing materials that truly make your company stand out. Whether it's a fresh logo design or an animated version of your existing one, we ensure your brand resonates with your target audience through captivating visuals.`
+  },
+  {
+    icon: <FaPencilRuler size={40} className="text-blue-500" />,
+    title: 'Animation',
+    description: `At TechStone, our mission is to create highly effective and tailored animation plans that align with your business goals. Our expertise lies in producing captivating 2D and 3D animations that leave a lasting impression on your audience. From animating existing logos to crafting entirely new ones, our creative solutions ensure your brand stands out in a competitive marketplace.`
+  },
+];
 
 const Services = () => {
-  const services = [
-    {
-      icon: (
-        <img src={Cuboid} alt="Tree and Shrub Pruning" className=" h-36 w-36" />
-      ),
-      title: 'TREE AND SHRUB PRUNING',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet modi accusantium vero perspiciatis, incidunt dicta sed aspernatur!',
-      bgColor: 'transparent',
-      shadowColor: '',
-    },
-    {
-      icon: (
-        <img
-          src={Cylinder}
-          alt="Irrigation & Drainage"
-          className="h-[8rem] w-[8rem]"
-        />
-      ),
-      title: 'IRRIGATION & DRAINAGE',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet modi accusantium vero perspiciatis, incidunt dicta sed aspernatur!',
-      bgColor: 'bg-transparent',
-      shadowColor: '',
-    },
-    {
-      icon: (
-        <img src={Pill} alt="Landscape Design" className="h-[7rem] w-[7rem]" />
-      ),
-      title: 'LANDSCAPE DESIGN',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet modi accusantium vero perspiciatis, incidunt dicta sed aspernatur!',
-      bgColor: 'bg-transparent',
-      shadowColor: '',
-    },
-  ];
-
   return (
-    <div className="lg:h-[35rem] xl:py-8 py-8 bg-[#050816] lg:flex lg:justify-evenly xl:flex xl:justify-evenly text-center ">
-      <h1 className="text-6xl text-white font-bold xl:absolute lg:absolute block py-10">
-        Our <span className="text-indigo-500">Services</span>{' '}
-      </h1>
+    <div className="  py-16 lg:px-16 px-3 bg-white text-gray-400">
+      <h2 className="text-3xl md:text-4xl text-blue-900 text-center font-extrabold title-font">
+        OUR SERVICES
+      </h2>
+      <div className="bg-blue-400 h-[3px] w-[40px] mx-auto mt-2 mb-6"></div>
 
-      {services.map((service, index) => (
-        <ServiceCard
-          key={index}
-          icon={service.icon}
-          title={service.title}
-          description={service.description}
-          bgColor={service.bgColor}
-          shadowColor={service.shadowColor}
-        />
-      ))}
+      <p className="text-center leading-[1.5rem] font-normal font-sans text-[1.1rem] text-gray-700 mt-2 mb-6">
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit.
+      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {services.map((service, index) => (
+          <motion.div
+            key={index}
+            className="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 hover:cursor-pointer"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.2, delay: index * 0.1 }}
+            whileHover={{ scale: 1.06 }}
+          >
+            <div className="flex justify-center mb-4">
+              {service.icon}
+            </div>
+            <h3 className="text-blue-900 text-2xl lg:text-3xl font-bold mb-3 text-center">
+              {service.title}
+            </h3>
+            <div className="bg-blue-900 h-[1px] w-[100%] mx-auto my-4"></div>
+
+            <p className="text-gray-800 font-sans text-base  text-justify">
+              {service.description}
+            </p>
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 };
