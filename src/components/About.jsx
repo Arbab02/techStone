@@ -2,7 +2,7 @@ import { IoCheckmarkDoneSharp } from 'react-icons/io5';
 
 const About = () => {
   return (
-    <section className="text-[#020D36] bg-white py-10">
+    <section className="text-blue-900 bg-white py-10">
       <div className="container px-4 sm:px-6 lg:px-10 mx-auto">
         {/* Heading */}
         <div className="text-center mb-6">
