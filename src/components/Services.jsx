@@ -44,7 +44,7 @@ const Services = () => {
       </h2>
       <div className="bg-blue-400 h-[3px] w-[40px] mx-auto mt-2 mb-6"></div>
 
-      <p className="text-center leading-[1.5rem] font-normal font-sans text-[1.1rem] text-gray-700 mt-2 mb-6">
+      <p className="text-center leading-[1.5rem] font-normal font-sans text-[1.1rem] text-gray-700 mt-2 mb-8">
         Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit.
       </p>
 
