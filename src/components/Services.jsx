@@ -1,4 +1,3 @@
-"use client";
 
 import { motion } from 'framer-motion';
 import { FaBullhorn, FaPencilRuler, FaSearch, FaGlobe, FaPaintBrush, FaFileAlt, FaChartLine } from 'react-icons/fa';
@@ -44,7 +43,7 @@ const Services = () => {
       </h2>
       <div className="bg-blue-400 h-[3px] w-[40px] mx-auto mt-2 mb-6"></div>
 
-      <p className="text-center leading-[1.5rem] font-normal font-sans text-[1.1rem] text-gray-700 mt-2 mb-8">
+      <p className="text-center leading-[1.5rem] font-normal font-sans text-[1.1rem] text-gray-700 mt-2 mb-6">
         Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit.
       </p>
 
@@ -52,7 +51,7 @@ const Services = () => {
         {services.map((service, index) => (
           <motion.div
             key={index}
-            className="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 hover:cursor-pointer"
+            className="p-6 bg-white rounded-lg shadow-lg duration-300 hover:cursor-pointer"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2, delay: index * 0.1 }}
