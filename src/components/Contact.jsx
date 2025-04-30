@@ -7,7 +7,7 @@ import { FaUser, FaEnvelope, FaTag, FaCommentDots, FaPaperPlane } from "react-ic
 const Contact = () => {
   return (
     <section className="text-gray-600  body-font bg-white relative py-16 px-5 md:px-28">
-      <h1 className="text-3xl md:text-4xl text-[#020D36] text-center tracking-tight font-extrabold title-font mb-4">
+      <h1 className="text-3xl md:text-4xl text-blue-900 text-center tracking-tight font-extrabold title-font mb-4">
         CONTACT US
       </h1>
       <div className="bg-blue-400  h-[3px] w-10 mx-auto mb-8"></div>
