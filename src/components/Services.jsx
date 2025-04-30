@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { FaBullhorn, FaPencilRuler, FaSearch, FaGlobe, FaPaintBrush, FaFileAlt, FaChartLine } from 'react-icons/fa';
 
@@ -53,8 +52,9 @@ const Services = () => {
             key={index}
             className="p-6 bg-white rounded-lg shadow-lg duration-300 hover:cursor-pointer"
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.2, delay: index * 0.1 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             whileHover={{ scale: 1.06 }}
           >
             <div className="flex justify-center mb-4">
