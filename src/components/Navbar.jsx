@@ -64,24 +64,28 @@ const Navbar = () => {
             >
               Services
             </a>
+            
+             <a
+              href="/#reviews"
+              className="text-white font-normal text-lg hover:text-indigo-300"
+            >
+              Reviews
+            </a>
+
+             <a
+              href="/#team"
+              className="text-white font-normal text-lg hover:text-indigo-300"
+            >
+              Team
+            </a>
+           
             <a
               href="/#pricing"
               className="text-white font-normal text-lg hover:text-indigo-300"
             >
               Pricing
             </a>
-            <a
-              href="/#team"
-              className="text-white font-normal text-lg hover:text-indigo-300"
-            >
-              Team
-            </a>
-            <a
-              href="/#reviews"
-              className="text-white font-normal text-lg hover:text-indigo-300"
-            >
-              Reviews
-            </a>
+           
             <a
               href="/#contact"
               className="text-white font-normal text-lg hover:text-indigo-300"
