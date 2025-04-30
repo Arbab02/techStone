@@ -44,7 +44,7 @@ const item = {
 
 const Statistics = () => {
   return (
-    <section className="py-14 bg-gray-100">
+    <section className="py-14 bg-white">
       <div className="max-w-6xl mx-auto px-4 text-center">
       <h2 className="text-3xl md:text-4xl text-blue-900 text-center font-extrabold title-font">
           OUR STATISTICS
