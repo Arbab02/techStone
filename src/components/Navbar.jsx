@@ -20,12 +20,16 @@ const Navbar = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-
+    
     return () => {
       // Cleanup event listener on component unmount
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  
+      const handleLinkClick = () => {
+        setIsOpen(false);
+      };
   return (
     <nav className="bg-[transparent] md:py-[7px] py-1 fixed w-full z-50 " ref={navRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-20">
@@ -98,20 +102,40 @@ const Navbar = () => {
               onClick={toggleMenu}
               className="text-gray-300 focus:outline-none"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+            {isOpen ? (
+  // Cross icon
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-6 w-6"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M6 18L18 6M6 6l12 12"
+    />
+  </svg>
+) : (
+  // Hamburger icon
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-6 w-6"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M4 6h16M4 12h16M4 18h16"
+    />
+  </svg>
+)}
+
             </button>
           </div>
         </div>
@@ -125,48 +149,55 @@ const Navbar = () => {
       >
         <a
           href="/#hero"
+          onClick={handleLinkClick}
           className="block px-4 py-2 text-gray-300  hover:text-indigo-300"
         >
           Home
         </a>
         <a
           href="/#about"
+          onClick={handleLinkClick}
           className="block px-4 py-2 text-gray-300  hover:text-indigo-300"
         >
           About
         </a>
         <a
           href="/#services"
+          onClick={handleLinkClick}
           className="block px-4 py-2 text-gray-300  hover:text-indigo-300"
         >
           Services
         </a>
         <a
           href="/#pricing"
+          onClick={handleLinkClick}
           className="block px-4 py-2 text-gray-300  hover:text-indigo-300"
         >
           Pricing
         </a>
         <a
           href="/#team"
+          onClick={handleLinkClick}
           className="block px-4 py-2 text-gray-300  hover:text-indigo-300"
         >
           Team
         </a>
         <a
           href="/#reviews"
+          onClick={handleLinkClick}
           className="block px-4 py-2 text-gray-300  hover:text-indigo-300"
         >
           Reviews
         </a>
         <a
           href="/#contact"
+          onClick={handleLinkClick}
           className="block px-4 py-2 text-gray-300  hover:text-indigo-300"
         >
           Contact
         </a>
         <div className="flex ml-4 mb-2">
-            <a href="#" className="text-white text-2xl iconGradient rounded-full mt-1 p-2  transition-all hover:scale-125  ">
+            <a href="#" className="text-white text-2xl iconGradient rounded-full mt-1 p-2 transition-all hover:scale-125  ">
             <IoIosSend />
             </a>
           </div>
