@@ -37,7 +37,7 @@ export default function TeamSection() {
     <section className="py-16  bg-gray-100 text-center">
       <div className="max-w-6xl px-3 md:px-2 mx-auto">
       <div className="text-center mb-6">
-          <h1 className="text-3xl md:text-4xl font-extrabold">TEAM</h1>
+          <h1 className="text-3xl md:text-4xl text-blue-900 font-extrabold">OUR TEAM</h1>
           <div className="bg-blue-400 h-[3px] w-[40px] mx-auto mt-2"></div>
         </div>
         <p className="text-lg font-sans text-gray-600 mb-12  mx-auto">
