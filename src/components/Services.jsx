@@ -11,12 +11,12 @@ const services = [
   {
     icon: <FaBullhorn size={40} className="text-blue-500" />,
     title: 'Digital Marketing',
-    description: `In order to improve your online presence and generate results, we provide a full range of digital marketing services. Our knowledgeable team has expertise in content creation, social media marketing, PPC advertising, SEO, and more. We customize our services to your unique needs, assisting you in productively reaching and engaging your target audience.`
+    description: `In order to improve your online presence and generate results, we provide a full range of digital marketing services. Our knowledgeable team has expertise in content creation, social media marketing, PPC advertising, SEO, and more. We customize our services to your unique needs, assisting you in productivity.`
   },
   {
     icon: <FaSearch size={40} className="text-blue-500" />,
     title: 'SEO',
-    description: `To help your company move up the search engine results pages and increase organic website traffic, TechStone offers professional SEO services. We conduct in-depth keyword research, optimize on-page content, improve website structure, and create high-quality backlinks. Our SEO strategies are data-driven, and ensuring your websites ranking.`
+    description: `To help your company move up the search engine results pages and increase organic website traffic, TechStone offers professional SEO services. We conduct in-depth keyword research, optimize on-page content, improve website structure, and create high-quality backlinks, ensuring your website's ranking.`
   },
   {
     icon: <FaFileAlt size={40} className="text-blue-500" />,
