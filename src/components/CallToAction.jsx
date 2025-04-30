@@ -13,8 +13,8 @@ export default function CallToAction() {
           <div className="lg:max-w-5xl max-w-7xl mx-auto px-6 lg:px-0 py-20 flex flex-col md:flex-row items-center justify-between gap-8">
             {/* Left Content */}
             <div className="md:w-2/3">
-              <h2 className="text-2xl md:text-4xl font-semibold mb-4">Call To Action</h2>
-              <p className="text-sm md:text-lg font-sans text-gray-200">
+             <h2 className="text-3xl md:text-4xl font-semibold mb-4">Call To Action</h2>
+              <p className="text-md md:text-lg font-sans text-gray-200">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
