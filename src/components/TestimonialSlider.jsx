@@ -24,7 +24,7 @@ const testimonials = [
   },
   {
     name: 'Adian Hadjin',
-    role: 'Founder of JS Mastery',
+    role: 'Founder of JavaScript Mastery',
     feedback:
       'This company is simply the best. Excellent service and a dedicated team!',
     image:
@@ -56,7 +56,7 @@ const TestimonialSlider = () => {
 
   return (
     <section className="bg-gray-100 text-blue-900 py-10">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto lg:px-6 px-1">
         {/* Title */}
         <h2 className="text-4xl text-center font-extrabold title-font mb-4">
           TESTIMONIALS
@@ -83,18 +83,18 @@ const TestimonialSlider = () => {
                 </div>
 
                 {/* Feedback Text */}
-                <p className="mt-3 text-gray-600 text-lg md:text-xl leading-relaxed italic">
+                <p className="mt-3 text-gray-700 text-lg md:text-xl leading-relaxed italic">
                   "{testimonial.feedback}"
                 </p>
 
                 {/* Quote Icon */}
-                <BiSolidQuoteAltLeft className="mx-auto my-4 text-5xl text-gray-600" />
+                <BiSolidQuoteAltLeft className="mx-auto my-4 text-5xl text-gray-800" />
 
                 {/* Name & Role */}
-                <h3 className="text-2xl font-normal text-gray-500">
+                <h3 className="text-2xl font-medium text-blue-600">
                   {testimonial.name}
                 </h3>
-                <p className="text-lg text-gray-500">{testimonial.role}</p>
+                <p className="text-lg text-gray-700">{testimonial.role}</p>
               </div>
             </div>
           ))}
