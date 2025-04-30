@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
-const PricingPlans = () => {
+const PricingSections = () => {
   const plans = [
     {
       title: "Free Plan",
@@ -44,30 +46,62 @@ const PricingPlans = () => {
   ];
 
   return (
-    <div className=" flex flex-col items-center justify-center bg-white px-6 py-16">
-       <h2 className="text-3xl md:text-4xl text-blue-900 text-center font-extrabold title-font">
-          PRICING
-        </h2>
-        <div className="bg-blue-400 h-[3px] w-[40px] mx-auto mt-2 mb-4"></div>
-        <p className="text-center leading-[1.5rem] font-normal font-sans text-[1.1rem] text-gray-700  mt-2 mb-10 ">
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="flex flex-col items-center justify-center bg-white px-6 py-16"
+    >
+      <motion.h2
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="text-3xl md:text-4xl text-blue-900 text-center font-extrabold title-font"
+      >
+        PRICING
+      </motion.h2>
+      <motion.div
+        initial={{ scaleX: 0 }}
+        whileInView={{ scaleX: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="bg-blue-400 h-[3px] w-[40px] mx-auto mt-2 mb-4 origin-left"
+      ></motion.div>
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.2, duration: 0.6 }}
+        className="text-center leading-[1.5rem] font-normal font-sans text-[1.1rem] text-gray-700 mt-2 mb-10"
+      >
         Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit.
-        </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full  ">
+      </motion.p>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
         {plans.map((plan, index) => (
-          <div
+          <motion.div
             key={index}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.2, duration: 0.6 }}
             className="flex flex-col rounded-lg shadow-lg bg-white overflow-hidden hover:shadow-xl transition-shadow"
           >
-            <div className="p-8 text-left  text-blue-900 ">
+            <div className="p-8 text-left text-blue-900">
               <h2 className="text-2xl font-medium mb-4">{plan.title}</h2>
-              <div className="text-5xl font-medium"><span className="text-4xl font-normal">$</span>{plan.price}</div>
+              <div className="text-5xl font-medium">
+                <span className="text-4xl font-normal">$</span>
+                {plan.price}
+              </div>
               <div className="text-lg text-blue-400 mb-6">{plan.period}</div>
 
               <ul className="text-gray-700 font-sans mb-6 space-y-3">
                 {plan.features.map((feature, idx) => (
                   <li
                     key={idx}
-                    className={`flex items-center text-left  gap-2 ${
+                    className={`flex items-center text-left gap-2 ${
                       !feature.available ? "text-gray-400 line-through" : ""
                     }`}
                   >
@@ -103,11 +137,11 @@ const PricingPlans = () => {
                 Get Started
               </button>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
-export default PricingPlans;
+export default PricingSections;
